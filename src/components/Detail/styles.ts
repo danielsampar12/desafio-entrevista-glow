@@ -130,3 +130,31 @@ export const PurchaseButtonAndIconContainer = styled.View`
   flex-direction: row;
   align-items: center;
 `;
+
+export const LogoContainer = styled.View`
+  position: absolute;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 180px;
+  height: 75px;
+
+  left: 210px;
+  top: 250px;
+
+  background: #000000;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  elevation: 5;
+  border-radius: 5px;
+
+  transform: rotateZ(20deg);
+`;
+
+export const Logo = styled.Image`
+  width: 80px;
+  height: 75px;
+  position: absolute;
+  transform: rotateZ(-20deg);
+`;

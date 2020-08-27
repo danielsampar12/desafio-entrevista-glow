@@ -3,6 +3,8 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import ColorList from '../ColorList';
 
+import logo from '../../assets/logomac.png';
+
 import {
   Container,
   DescriptionContainer,
@@ -23,10 +25,13 @@ import {
   PurchaseButtonText,
   PurchaseButtonAndIconContainer,
   WrapContainer,
+  LogoContainer,
+  Logo,
 } from './styles';
 
 const Detail: React.FC = () => {
   const [added, setAdded] = useState(1);
+  // eslint-disable-next-line
   const [price, setPrice] = useState(149.99);
 
   const handleAddProduct = useCallback(() => {
@@ -76,6 +81,9 @@ const Detail: React.FC = () => {
           R$
           {price * added}
         </PriceText>
+        <LogoContainer>
+          <Logo source={logo} />
+        </LogoContainer>
       </WrapContainer>
 
       <PurchaseButton>
