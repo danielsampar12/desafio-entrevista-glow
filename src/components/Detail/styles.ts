@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   background: #fff9fe;
   width: 100%;
-  height: 347px;
+  height: 500px;
   border-radius: 30px;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.15);
   elevation: 5;
@@ -101,6 +101,7 @@ export const AddedCountText = styled.Text`
 `;
 
 export const PriceText = styled.Text`
+  margin-top: 10px;
   font-size: 24px;
   color: #1d1d1d;
   font-family: 'Roboto-Regular';
@@ -110,6 +111,7 @@ export const PurchaseButton = styled.TouchableOpacity`
   width: 100%;
   max-width: 337px;
   height: 46px;
+  margin-top: 20px;
   background: #72303d;
   border-radius: 5px;
   align-self: center;
